@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>İletişim</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+#map{
+height:500px;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="sidebar" class="sidebar">
+
+<a href="javascript:void(0)" onclick="closeNav()">Kapat</a>
+
+<a href="hakkimda.html">Hakkımda</a>
+<a href="hobiler.html">Hobiler</a>
+<a href="iletisim.html">İletişim</a>
+
+</div>
+
+
+<div id="main">
+<div id="navbar"></div>
+
+
+<h2>iş adresi</h2>
+
+
+<div id="map"></div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+<script src="loader.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+// koordinatlar
+var lat = 39.911620;
+var lon = 32.751893;
+
+// harita oluştur
+var map = L.map('map',{
+minZoom:1
+}).setView([lat,lon],13);
+
+// OpenStreetMap katmanı
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+attribution:'&copy; OpenStreetMap contributors',
+noWrap:true
+}).addTo(map);
+
+// marker ekle
+L.marker([lat,lon])
+.addTo(map)
+.bindPopup("Çevre Şehir ve İklim Değişikliği Bakanlığı <br>" )
+.openPopup();
+
+</script>
+
+
+
+</body>
+</html>

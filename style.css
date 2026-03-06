@@ -1,0 +1,169 @@
+body{
+margin:0;
+font-family:Arial;
+transition:0.3s;
+}
+
+/* üst menü */
+.topnav{
+background:#333;
+padding:10px;
+color:white;
+}
+
+.topnav a{
+color:white;
+margin-right:15px;
+text-decoration:none;
+}
+
+/* sidebar */
+
+.sidebar{
+height:100%;
+width:0;
+position:fixed;
+left:0;
+top:0;
+background:#111;
+overflow-x:hidden;
+transition:0.3s;
+padding-top:60px;
+z-index:1000;
+}
+
+.sidebar a{
+padding:10px 20px;
+display:block;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#575757;
+}
+
+.openbtn{
+font-size:20px;
+cursor:pointer;
+background:#333;
+color:white;
+border:none;
+padding:10px 15px;
+}
+
+/* içerik alanı */
+
+#main{
+transition:margin-left .3s;
+padding:20px;
+}
+
+.social-container{
+display:flex;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.social-item{
+text-decoration:none;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:18px;
+}
+
+.social-item i{
+font-size:60px;
+margin-bottom:10px;
+transition:0.3s;
+}
+
+/* renkler */
+
+.instagram{
+color:#E1306C;
+}
+
+.facebook{
+color:#1877F2;
+}
+
+.linkedin{
+color:#0A66C2;
+}
+
+.github{
+color:#000;
+}
+
+.social-item span{
+color:#333;
+font-weight:bold;
+}
+
+/* hover animasyonu */
+
+.social-item:hover i{
+transform:scale(1.2);
+}
+
+.topnav{
+display:flex;
+align-items:center;
+background:#333;
+padding:10px;
+}
+
+/* sosyal medya ikonları */
+
+.social-top{
+display:flex;
+gap:15px;
+margin-left:10px;
+}
+
+.social-top i{
+font-size:22px;
+transition:0.3s;
+}
+
+.social-top i:hover{
+transform:scale(1.2);
+}
+
+/* renkler */
+
+.instagram{
+color:#E1306C;
+}
+
+.facebook{
+color:#1877F2;
+}
+
+.linkedin{
+color:#0A66C2;
+}
+
+.github{
+color:#fff;
+}
+
+/* sayfa linkleri */
+
+.menu-links{
+margin-right:auto;
+}
+
+.menu-links a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu-links a:hover{
+text-decoration:underline;
+}
